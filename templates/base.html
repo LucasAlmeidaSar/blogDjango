@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site pessoal do Lucas de Almeida Sarmento, dando dicas de tecnologias,
+    falando um pouco sobre si e etc.">
+    <meta name="author" content="Lucas de Almeida Sarmento">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'/>
+
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cores.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" href="{% static 'image/logo.ico' %}">
+    {% block style %}{% endblock %}
+    {% block title %}{% endblock %}
+</head>
+<body>
+  <nav class="nav flex">
+      <a class="btn btn-nav btn-logo" href="/">Lucas A. S.</a>
+      <ul class="flex">
+        <li> <a class="btn btn-nav" href="/">Home</a> </li>
+        <li> <a class="btn btn-nav" href="../posts/">Blog</a> </li>
+        <li> <a class="btn btn-nav" href="../sobre/">Sobre</a> </li>
+        <li> <a class="btn btn-nav" href="../contato/">Contato</a> </li>
+        {% block navbar %}
+
+        {% endblock %}
+      </ul>
+  </nav>
+
+
+  <main>
+    {% block content %}
+
+    {% endblock %}
+  </main>
+
+
+    <footer class="rodape flex">
+        <p>Feito com <i class="fas fa-heart"></i> e <i class="fas fa-coffee"></i></p>
+
+      <ul class="flex">
+        <li>
+          <a class="btn btn-rodape"
+            href="https://www.linkedin.com/in/lucas-de-almeida-sarmento-a1617516a/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn-rodape"
+            href="https://github.com/LucasAlmeidaSar"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        Powered by
+        <a class="rodape-link" href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">Django</a>
+        <i class="fab fa-python"></i>
+      </p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %} <link rel="stylesheet" href="{% static 'css/sobre.css' %}"> {% endblock %}
+{% block title %} <title>Sobre | Lucas de Almeida</title> {% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="sobre-titulo">Sobre mim</h1>
+
+  <p class="sobre-texto">
+    Eu sou Lucas de Almeida Sarmento, estudo Análise e Desenvolvimento de Sistemas no Salesiano de Vitória-ES.
+    Tenho estudado programação há cerca de dois anos e a cada dia que se passa vejo que de fato estou na área certa para mim.
+    Atualmente tenho um conhecimento maior sobre desenvolvimento WEB por ser a primeira área em que de fato me identifiquei,
+    também tenho estudado cada vez mais sobre Ciência de Dados, aprendizado de máquina e afins.
+  </p>
+  <p class="sobre-texto">
+    Saindo da parte técnica, sou uma pessoa bem determinada em meus estudos, gosto muito de aprender e por isso estou sempre
+    estudando, seja uma tecnologia nova, um idioma, coisas sobre Astronomia e outros.
+  </p>
+  <p class="sobre-texto">
+    Nas horas vagas gosto de ficar com minha namorada, amigos e família. Assim como ver aquele filme na Netflix que não pode
+    faltar rsr. Pratico musculação pois acho importante cuidar também do corpo e da saúde e sou um amante das artes marciais,
+    principalmente do Muay Thai, o qual pratiquei por alguns anos em minha vida.
+  </p>
+
+    <h2 class="sobre-titulo">Habilidades</h2>
+    <div class="container-imagens">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/python.png' %}" alt="Python" title="Python">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/django.png' %}" alt="Django" title="Django">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/javascript.png' %}" alt="JavaScript" title="JavaScript">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/css.png' %}" alt="CSS" title="CSS">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/html.png' %}" alt="HTML" title="HTML">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/apiRest.jpg' %}" alt="API Rest" title="API Rest">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/pandas.png' %}" alt="Pandas" title="Pandas">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/react.png' %}" alt="React" title="React">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/Typescript.png' %}" alt="TypeScript" title="TypeScript">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/bootstrap.png' %}" alt="Bootstrap" title="Bootstrap">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/Apollo.png' %}" alt="Apollo" title="Apollo">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/mySQL.png' %}" alt="MySQL" title="MySQL">
+      <img class="imagem-tecnologias" src="{% static 'image/tecnologias/postgreSQL.png' %}" alt="PostgreSQL" title="PostgreSQL">
+
+    </div>
+
+
+
+  </div>
+{% endblock %}

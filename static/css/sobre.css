@@ -1,0 +1,33 @@
+.container{
+    margin: 100px auto;
+}
+
+.sobre-titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.sobre-texto{
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.sobre-link{
+    color: #6C51E9;
+}
+
+.container-imagens{
+    text-align: center;
+}
+
+.imagem-tecnologias{
+    max-width: 100px;
+    max-height: 200px;
+    border-radius: 50px;
+    margin: 10px 15px;
+    object-fit: cover;
+    object-position: center;
+}
+

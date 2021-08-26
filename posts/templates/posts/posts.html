@@ -16,7 +16,15 @@
 {% block content %}
  <!-- <h1 class="title">Posts</h1> -->
 
+        <!-- Input de busca -->
+       <form class="busca-sm flex" action="{% url 'post_busca' %}">
+          <div class="busca-sm-input">
+            <input type="search" id="form-busca-sm" name="termo" value="{{ request.GET.termo }}" placeholder="Pesquise.."/>
+          </div>
+        </form>
+
       <!-- Container de posts -->
+
       <div class="posts-wrapper">
 
         <!-- Grid de posts -->

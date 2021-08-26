@@ -31,6 +31,26 @@
       </ul>
   </nav>
 
+  <nav class="smnav nav flex">
+      <a class="btn btn-nav btn-logo" href="/">Lucas A. S.</a>
+
+      <div class="lista-links">
+          <a href="javascript:void(0);" class="btn btn-nav btn-close" onclick="expandirRecolherMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+        <ul class="links-sm flex center">
+            <a class="btn btn-nav btn-sm" href="/">Home</a>
+            <a class="btn btn-nav btn-sm" href="../posts/">Blog</a>
+            <a class="btn btn-nav btn-sm" href="../sobre/">Sobre</a>
+            <a class="btn btn-nav btn-sm" href="../contato/">Contato</a>
+        </ul>
+      </div>
+
+      <a href="javascript:void(0);" class="btn btn-nav" onclick="expandirRecolherMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </nav>
+
 
   <main>
     {% block content %}
@@ -40,7 +60,7 @@
 
 
     <footer class="rodape flex">
-        <p>Feito com <i class="fas fa-heart"></i> e <i class="fas fa-coffee"></i></p>
+        <p class="rodape-feito-com">Feito com <i class="fas fa-heart"></i> e <i class="fas fa-coffee"></i></p>
 
       <ul class="flex">
         <li>
@@ -61,12 +81,26 @@
         </li>
       </ul>
 
-      <p>
+      <p class="rodape-powered">
         Powered by
         <a class="rodape-link" href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">Django</a>
         <i class="fab fa-python"></i>
       </p>
     </footer>
+
+    <script>
+        function expandirRecolherMenu() {
+          const menu = document.querySelector(".lista-links");
+          const rodape = document.querySelector(".rodape")
+          if (menu.style.display === "block") {
+            menu.style.display = "none";
+            rodape.style.display = "flex";
+          } else {
+            menu.style.display = "block";
+            rodape.style.display = "none";
+          }
+        }
+    </script>
 
 
 </body>

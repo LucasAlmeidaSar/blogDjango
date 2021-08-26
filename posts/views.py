@@ -74,6 +74,7 @@ class PostBusca(PostsView):
         if not termo:
             return qs
 
+
         qs = qs.filter(
                 Q(titulo_post__icontains=termo) |
                 Q(categoria_post__nome_categoria__iexact=termo) |

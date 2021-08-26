@@ -184,7 +184,7 @@ body {
   background-color: var(--cor-icone-hover-nav-principal-scroll);
 }
 
-
+/* Nav padrão */
 .nav{
   position: fixed;
   top: 0;
@@ -198,6 +198,40 @@ body {
   transition: all .5s ease;
 }
 
+/* Nav Mobile */
+.smnav{
+    display: none
+}
+.lista-links{
+    position: absolute;
+    display:none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(24,24,24);
+    place-items: center;
+}
+.links-sm{
+    flex-direction: column;
+}
+
+.btn-sm{
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1.5rem;
+    width: 150px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 60px;
+    font-size: 1.5rem;
+}
+
+/* Paginação */
 .pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -296,40 +330,6 @@ body {
     margin-top: 1.5rem!important;
 }
 
-@media (min-width: 576px){
-.container {
-    max-width: 540px;
-}
-}
-
-
-@media (min-width: 768px){
-.container {
-    max-width: 720px;
-}
-}
-
-@media (min-width: 992px){
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px){
-    .container {
-        max-width: 1140px;
-    }
-    .col-xl {
-        flex-basis: 0;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-    .col-xl-8 {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-}
-
 .alert{
     display: block;
     box-sizing: border-box;
@@ -386,8 +386,77 @@ body {
      height: 35px;
 }
 
+/* Responsividade própria para menu */
 @media (max-width:770px){
     .nav{
         display: none;
+        padding: 30px 5px;
+    }
+    .smnav{
+        display: flex;
+    }
+    .btn-logo{
+        width: 120px;
+    }
+}
+
+/* RESPONSIVIDADE PARA O RODAPÉ */
+@media (min-width:700px){
+    .rodape{
+        height: 80px;
+    }
+}
+
+@media (max-width:450px){
+    .rodape{
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .rodape-feito-com{
+        display: none;
+    }
+
+    .rodape-powered{
+        font-size: .85rem;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+    .col-xl {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-xl-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
     }
 }

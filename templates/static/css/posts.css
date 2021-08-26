@@ -92,6 +92,31 @@ main{
     background-color: white;
 }
 
+.page-notfound {
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titulo-notfound{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.busca-sm-input{
+    display: none;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.busca-sm-input input{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
 .active{
     background: lightgray;
 }
@@ -123,16 +148,23 @@ main{
         padding: 0;
     }
     main {
-        margin: 150px auto 50px auto;
+        margin: 100px auto 50px auto;
         width: 65%;
         padding: 10px;
     }
 
 }
 
+@media (max-width:770px){
+
+    .busca-sm-input{
+        display: block;
+    }
+}
+
 @media (max-width: 450px){
     main {
-        margin: 150px auto 50px auto;
+        margin: 50px auto 50px auto;
         width: 100%;
         padding: 10px;
     }

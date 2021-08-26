@@ -15,8 +15,21 @@
 
 {% block content %}
 
+        <!-- Input de busca -->
+       <form class="busca-sm flex" action="{% url 'post_busca' %}">
+          <div class="busca-sm-input">
+            <input type="search" id="form-busca-sm" name="termo" value="{{ request.GET.termo }}" placeholder="Pesquise.."/>
+          </div>
+        </form>
+      <div class="posts-wrapper">
+
       <!-- Container de posts -->
       <div class="posts-wrapper">
+
+        {% if not posts %}
+          <h1 class="titulo-notfound alert alert-danger">Nenhum resultado encontrado!</h1>
+            <div class="page-notfound" style="background-image: url({% static 'image/not_found.jpg' %})"></div>
+        {% endif %}
 
         <!-- Grid de posts -->
         <ul class="post-list">

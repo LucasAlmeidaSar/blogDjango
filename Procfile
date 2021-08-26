@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn projectBlog.wsgi --preload --log-file -
+web: gunicorn blog.wsgi --preload --log-file -

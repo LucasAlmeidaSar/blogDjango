@@ -34,7 +34,7 @@
                     <div class="col-xl"></div>
                     <div class="col-xl-8">
                         {% if post.imagem_post %}
-                        <img class="imagem img-fluid pb-5 " src="{{ post.imagem_post.url }}" alt="{{ post.imagem_post.name }}">
+                        <img class="imagem img-fluid pb-5 " src="{{ post.imagem_post }}" alt="{{ post.imagem_post.name }}">
                         {% endif %}
 
                         {{ post.conteudo_post|safe }}

@@ -105,6 +105,7 @@ body {
   border-radius: 10px;
   background: white;
   box-shadow: 5px 5px 10px var(--cor-box-shadow-cards);
+  overflow: hidden;
 }
 
 .card__imagem {

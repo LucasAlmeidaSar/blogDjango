@@ -58,15 +58,15 @@ p{
 }
 
 pre {
-    border-radius: 5px;
-    border: 0.5px solid lightgray;
-    background: #f1f1f1;
-    text-align: left;
-    color: #555;
-    margin: 15px 0;
-    padding: 10px 15px;
-    font-size: .9rem;
-    font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  background: #f9f9f9;
+  text-align: left;
+  color: #6c6c6c;
+  margin: 15px 0;
+  padding: 15px;
+  font-size: .85rem;
+  font-family: 'Source Code Pro';
 }
 
 hr {

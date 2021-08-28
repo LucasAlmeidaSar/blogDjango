@@ -41,7 +41,7 @@
                 <a class="post-link" href="{% url 'post_detalhes' post.id %}">
                 <div class="post-imagem">
                   {% if post.imagem_post %}
-                    <img class="imagem" src="{{post.imagem_post.url}}" alt="{{post.imagem_post.name}}">
+                    <img class="imagem" src="{{post.imagem_post}}" alt="{{post.imagem_post.name}}">
                     {% endif %}
                     {% if not post.imagem_post %}
                     <img class="imagem" src="{% static 'image/no-picture.png' %}" alt="none">

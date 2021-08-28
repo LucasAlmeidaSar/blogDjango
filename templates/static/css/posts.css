@@ -44,6 +44,7 @@ main{
   border-radius: 10px;
   box-shadow: 5px 5px 10px lightgray;
   transition: all .3s ease;
+  overflow: hidden;
 }
 
 .post-card:hover{
@@ -83,7 +84,6 @@ main{
 
 .post-subtitle{
   text-align: justify;
-  letter-spacing: 1px;
   line-height: 1.2;
   overflow-wrap: anywhere;
 }

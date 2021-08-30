@@ -422,6 +422,16 @@ body {
         font-size: .85rem;
         margin-top: 30px;
     }
+       
+    .btn-nav {
+      width: 60px;
+    }
+    .btn-logo {
+      width: 120px;
+    }
+    .btn-sm {
+      width: 150px;
+  }
 }
 
 
@@ -431,7 +441,7 @@ body {
 @media (min-width: 576px){
     .container {
         max-width: 540px;
-    }
+    } 
 }
 
 

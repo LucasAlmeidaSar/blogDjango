@@ -224,28 +224,31 @@ iframe{
     font-weight: bold;
 }
 
-@media (max-width:426px){
+@media (max-width:426px){   
     .post_titulo {
-        font-size: 2rem;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
     }
-    .post_titulo {
-        font-size: 2rem;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
+    h1, h2, h3, h4, h5, h6, p {
+      line-height: 1.2;
     }
     h1 {
-        font-size: 2rem;
-        text-align: center;
-        letter-spacing: 1px;
-        margin-bottom: 30px;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
     }
     h2 {
-        font-size: 1.5rem;
-        letter-spacing: 1.2px;
-        margin-bottom: 20px;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
     }
     p {
         margin-bottom: 10px;
+    }
+    img{
+      min-width: 100%;
+      max-width: 100%;
     }
 }

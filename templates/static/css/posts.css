@@ -169,4 +169,28 @@ main{
         padding: 10px;
     }
 
+    .post-imagem{
+      margin-bottom: 10px;
+    }
+    .imagem {
+      max-height: 120px;
+    }    
+    .post-date {
+      margin-bottom: 10px;
+      font-size: .8rem;
+    }
+    .post-title {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .post-subtitle {
+      letter-spacing: 0px;
+      text-align: initial;
+    }
+    .post-card{
+      width: 90%;
+      margin: 0 auto;
+    }
+
 }

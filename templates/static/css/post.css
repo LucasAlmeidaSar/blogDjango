@@ -42,6 +42,10 @@ ul{
    margin-bottom: 10px;
 }
 
+li{
+  margin-bottom: 5px;
+}
+
 ol{
    list-style: auto;
 }
@@ -228,8 +232,12 @@ iframe{
 
 @media (min-width:1440px){
   .form-wrapper{
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
+  }
+  .form_container {
+    margin: 10px auto 50px 0;
+    width: 60%;
   }
 }
 

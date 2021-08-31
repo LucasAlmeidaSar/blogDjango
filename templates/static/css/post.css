@@ -168,6 +168,10 @@ td, th {
     list-style: none;
 }
 
+.nav ul{
+  margin-bottom: 0px;
+}
+
 .form-comentario_titulo{
     margin-bottom: 1rem;
     font-size: 1.75rem;

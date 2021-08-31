@@ -276,7 +276,8 @@ body {
 }
 
 .rodape-link{
-  text-decoration: underline;
+  text-decoration: underline;  
+  color: var(--cor-clara);
 }
 
 .rodape-link:hover{

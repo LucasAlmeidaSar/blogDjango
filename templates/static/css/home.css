@@ -117,6 +117,7 @@ body{
         position: static;
         transform: translate(0%, 0%);
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
     .imagem {
         min-width: 100px;

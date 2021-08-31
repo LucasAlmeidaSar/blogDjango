@@ -146,12 +146,6 @@ td, th {
     border: 1px solid #dee2e6;
 }
 
-.table_comentario td, .table_comentario th, .table_comentario tr:first-child{
-    background: inherit;
-    border-left: none;
-    border-right: none;
-}
-
 [id="envia_comentario"]{
     margin-bottom: 50px;
     margin: 0 auto 30px auto;
@@ -171,7 +165,7 @@ td, th {
     font-size: 1.75rem;
 }
 
-.comentario_container{
+.comentario{
     background: #f8f8f8;
     border-radius: 10px;
     padding: 10px 15px;
@@ -224,6 +218,21 @@ iframe{
     font-weight: bold;
 }
 
+.centralizado{
+  text-align: center;
+}
+
+
+
+/* Responsividade */
+
+@media (min-width:1440px){
+  .form-wrapper{
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width:426px){   
     .post_titulo {
       font-size: 1.5rem;
@@ -231,6 +240,10 @@ iframe{
       line-height: 1.1;
       margin-bottom: 1.2rem;
     }
+    .form-comentario_titulo {
+      font-size: 1.5rem;
+    }
+
     h1, h2, h3, h4, h5, h6, p {
       line-height: 1.2;
     }

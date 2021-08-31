@@ -73,7 +73,17 @@ body{
     justify-content: flex-start;
 }
 
+
+
 /* RESPONSIVIDADE */
+@media (max-width:1300px){
+  
+  .imagem {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+}
+}
 
 @media (max-width:1025px){
     .main-title {
@@ -82,11 +92,6 @@ body{
     .main-text {
         letter-spacing: 0px;
     }
-    .imagem {
-        min-width: 300px;
-        max-width: 300px;
-        max-height: 300px;
-   }
 
 }
 

@@ -128,6 +128,9 @@ main{
     font-size: .75rem;
 }
 
+
+/* Responsividade */
+
 @media (max-width: 1260px){
     .post-list {
         grid-template-columns: repeat(2, 1fr);
@@ -159,6 +162,9 @@ main{
 
     .busca-sm-input{
         display: block;
+    }
+    .posts-wrapper {
+        margin-bottom: 0px;
     }
 }
 

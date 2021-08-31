@@ -24,6 +24,10 @@ input.btn:hover{
     font-weight: bold;
 }
 
+
+
+/* Responsividade */
+
 @media (max-width: 769px){
     .form_container{
         width: 100%;
@@ -34,7 +38,10 @@ input.btn:hover{
     .form_container input, .form_container textarea {
         width: 100%;
     }
-    .container {
-      padding: 0;
-    }
+}
+
+@media (max-width: 321px) {  
+  .container {
+    padding: 0;
+  }
 }

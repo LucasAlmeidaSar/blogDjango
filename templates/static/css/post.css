@@ -13,7 +13,8 @@
 }
 
 h1,h2,h3,h4,h5,h6{
-  margin: 20px 0 5px 0;
+  margin: 20px 0 5px 0;  
+  color: rgb(77, 78, 234);
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -98,6 +99,9 @@ a{
     color: #8E75FF;
     cursor: pointer;
 }
+b{
+  color: rgb(77, 78, 234);
+}
 
 .post-link{
   text-align: left;
@@ -128,9 +132,12 @@ a{
     margin-bottom: 2.5rem;
 }
 
+.form-wrapper{
+  margin: 80px 0;
+}
+
 .form_container {
     margin: 10px auto 50px auto;
-    width: 100%;
 }
 
 .form_container input {
@@ -158,11 +165,14 @@ td, th {
     margin-bottom: 50px;
     margin: 0 auto 30px auto;
     cursor: pointer;
+    max-width: 200px;
+    background: rgb(77, 78, 234);
 }
 
 [id="envia_comentario"]:hover{
-    background: #333;
+    background: rgb(58, 149, 228);
 }
+
 
 .nav ul, footer ul{
     list-style: none;
@@ -175,6 +185,7 @@ td, th {
 .form-comentario_titulo{
     margin-bottom: 1rem;
     font-size: 1.75rem;
+    text-align: center;
 }
 
 .comentario{
@@ -238,21 +249,20 @@ iframe{
 
 /* Responsividade */
 
-@media (min-width:1440px){
+@media (min-width:1040px){
   .form-wrapper{
     width: 100%;
-    margin: 80px 0;
   }
   .form_container {
     margin: 10px auto 50px auto;
     width: 60%;
   }
-  .form-comentario_titulo {
-    text-align: center;
-  }
 }
 
 @media (max-width:426px){   
+    .form_container{      
+      width: 100%;
+    }
     .post_titulo {
       font-size: 1.5rem;
       letter-spacing: 1px;

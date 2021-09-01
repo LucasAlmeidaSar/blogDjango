@@ -6,12 +6,14 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 50px;
+    color: rgb(77, 78, 234);
 }
 
 .sobre-texto{
     line-height: 1.5;
     margin-bottom: 15px;
     text-align: justify;
+    color: #494b4e;
 }
 
 .sobre-link{

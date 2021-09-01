@@ -2,7 +2,7 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 50px;
-    color: #555;
+    color: rgb(77, 78, 234);
 }
 
 .container{
@@ -16,7 +16,7 @@ input.btn{
 }
 
 input.btn:hover{
-   background: #333;
+   background: rgb(58, 149, 228);
 }
 
 .errorlist {

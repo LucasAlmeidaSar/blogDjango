@@ -24,19 +24,21 @@ body{
 
 .image-wrapper .imagem{
   border-radius: 50%;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .main-title{
   padding: 0 15px;
   font-size: 3.5rem;
   letter-spacing: 4px;
+  color: rgb(77, 78, 234 );
 }
 
 .main-subtitle{
   padding: 0 15px;
   font-size: 1.3rem;
   margin-bottom: 10px;
+  color: rgb(77, 78, 234 );
 }
 
 .main-text{
@@ -45,6 +47,7 @@ body{
   letter-spacing: 1px;
   line-height: 1.5;
   margin-bottom: 40px;
+  color: #494b4e;
 }
 
 .btn-main{
@@ -53,10 +56,19 @@ body{
   font-size: 1.2rem;
 }
 
-.btn-blog{background-color: var(--btn-main-blog);  }
-.btn-portifolio{background-color: var(--btn-main-portifolio);  }
-.btn-sobre{background-color: var(--btn-main-sobre);  }
-.btn-contato{background-color: var(--btn-main-contato);  }
+.btn-portifolio,
+.btn-blog,
+.btn-sobre,
+.btn-contato{
+  background-color: rgb(77, 78, 234); 
+}
+
+.btn-blog:hover,
+.btn-portifolio:hover,
+.btn-contato:hover,
+.btn-sobre:hover{
+  background-color: rgb(58, 149, 228);
+}
 
 
 .rodape {
@@ -76,13 +88,12 @@ body{
 
 
 /* RESPONSIVIDADE */
-@media (max-width:1300px){
-  
+@media (max-width:1441px){  
   .imagem {
     min-width: 300px;
     max-width: 300px;
     max-height: 300px;
-}
+  } 
 }
 
 @media (max-width:1025px){
@@ -91,7 +102,7 @@ body{
     }
     .main-text {
         letter-spacing: 0px;
-    }
+    } 
 
 }
 

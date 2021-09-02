@@ -29,7 +29,7 @@ body{
 
 .main-title{
   padding: 0 15px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 4px;
   color: rgb(77, 78, 234 );
 }
@@ -38,7 +38,7 @@ body{
   padding: 0 15px;
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: rgb(77, 78, 234 );
+  color: #494b4e ;
 }
 
 .main-text{

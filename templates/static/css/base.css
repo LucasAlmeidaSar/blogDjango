@@ -189,7 +189,7 @@ body {
   top: 0;
   z-index: 9999;
   width: 100%;
-  background-image: linear-gradient(45deg, rgb(77, 78, 234), rgb(58, 149, 228 ));
+  background-image: linear-gradient(45deg, #221493, rgb(77, 78, 234), rgb(58, 149, 228 ));
   justify-content: space-between;
   padding: 30px 25px;
   height: 40px;
@@ -208,7 +208,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: linear-gradient(45deg, rgb(77, 78, 234), rgb(58, 149, 228));
+    background-image: linear-gradient(45deg, #221493, rgb(77, 78, 234), rgb(58, 149, 228));
     place-items: center;
 }
 .links-sm{
@@ -267,7 +267,7 @@ body {
 
 .rodape {
   width: 100%;
-  background-image: linear-gradient(45deg, rgb(58, 149, 228 ), rgb(77, 78, 234));
+  background-image: linear-gradient(45deg, rgb(58, 149, 228 ), rgb(77, 78, 234), #221493);
   padding: 48px 32px;
   color: white;
   justify-content: space-around;
@@ -280,7 +280,7 @@ body {
 
 .rodape-link:hover{
   text-decoration: none;
-  color: #333;
+  color: #333 ;
 }
 
 /* POST CONTAINER */
@@ -428,12 +428,6 @@ body {
 @media (min-width: 768px){
     .container {
         max-width: 720px;
-    }
-}
-
-@media (min-width: 992px){
-    .container {
-        max-width: 960px;
     }
 }
 

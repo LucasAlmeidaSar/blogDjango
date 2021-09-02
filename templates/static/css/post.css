@@ -14,7 +14,7 @@
 
 h1,h2,h3,h4,h5,h6{
   margin: 20px 0 5px 0;  
-  color: rgb(77, 78, 234);
+  color: #494b4e ;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -100,7 +100,7 @@ a{
     cursor: pointer;
 }
 b{
-  color: rgb(77, 78, 234);
+  color: #494b4e;
 }
 
 .post-link{
@@ -183,34 +183,35 @@ td, th {
 }
 
 .form-comentario_titulo{
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
-    text-align: center;
+  color: #3f3fc4;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
-.comentario{
-    background: #f8f8f8;
-    border-radius: 10px;
-    padding: 10px 15px;
-    border: 1px solid lightgray;
-    margin: 10px 0;
+.comentario {
+  background: #E9F2FC;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid #BED9F6;
+  margin: 10px 0;
 }
 
 .comentarios_titulo{
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color: #555;
+    color: #3f3fc4;
 }
 
 .comentario_autor{
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: .5rem;
-    color: #555;
+    color: #3f3fc4;
 }
 
 .comentario_conteudo{
-    margin-bottom: .25rem;
+  margin: .25rem 0;
 }
 
 
@@ -247,7 +248,7 @@ iframe{
 
 
 
-/* Responsividade */
+/* Responsividade do Form */
 
 @media (min-width:1040px){
   .form-wrapper{
@@ -259,12 +260,22 @@ iframe{
   }
 }
 
-@media (max-width:426px){   
+
+
+/* Responsividade do post */
+@media (max-width:426px){  
+    .comentarios_titulo{
+      font-size: 1.2rem;
+    }
+    .comentario_autor{
+      font-size: 1rem;
+    }
+  
     .form_container{      
       width: 100%;
     }
     .post_titulo {
-      font-size: 1.5rem;
+      font-size: 2rem;
       letter-spacing: 1px;
       line-height: 1.1;
       margin-bottom: 1.2rem;

@@ -352,6 +352,17 @@ body {
      height: 35px;
 }
 
+.errorlist {
+  color: red;
+  font-weight: bold;
+  background: #ffbcbc66;
+  border-radius: 5px;
+  border: 1px solid #f3a8a8;
+  list-style: none;
+  padding: 5px 10px;
+}
+
+
 
 
 /* Responsividade própria para menu */

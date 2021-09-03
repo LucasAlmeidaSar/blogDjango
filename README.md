@@ -1,6 +1,2 @@
 # Projeto Blogsite em Django
-A idéia foi criar um blog pessoal para postar meu aprendizado, materiais que estudei ou estou estudando, onde consegui encontrar os conteúdos, dicas para quem está entrando no mundo da programação e não sabe por onde começar, ao mesmo tempo estou praticando os conhecimentos adquiridos em Python/Django na criação deste blog e unindo com o que já sei de frontend.
-
-### Assista o vídeo do projeto no Youtube: [Vídeo](https://www.youtube.com/watch?v=yZJtcW_jquw) 
-
-### Acesse o site e confira: [Meu blog](caminho)
+A idéia foi criar um blog pessoal para postar meu aprendizado, materiais que estudei ou que estou estudando, onde encontrei os conteúdos e entre outras dicas para quem está entrando no mundo da programação. Ao mesmo tempo é uma forma de praticar os conhecimentos adquiridos em Python/Django unidos com o que já conheço do frontend.

@@ -1,0 +1,47 @@
+:root{
+
+    /* Cores gerais */
+    --cor-clara  : white;
+    --cor-escura : rgb(24, 24, 24);
+    --cor-media : #8899A6;
+
+    /* Elementos gerais */
+    --cor-fundo-principal : #f3f3f3;
+    --cor-btn: rgb(77, 78, 234);
+
+    /* Botões Personalizados */
+    --btn-main-blog : #42177E;
+    --btn-main-portifolio : #FD7A8C;
+    --btn-main-sobre : #58025a;
+    --btn-main-contato : #0c5460 ;
+
+    /* Botões Navegação*/
+    --btn-nav-hover: rgba(255, 255, 255, 0.192);
+
+    /* Rodapé */
+    --cor-fundo-rodape : rgb(24, 24, 24);
+
+    /* Navegação Principal */
+    --cor-btn-nav: transparent;
+    --cor-btn-nav-principal-hover: rgba(255, 255, 255, .15);
+    --cor-btn-nav-principal-hover-scroll: rgba(0, 0, 0, .3);
+    --cor-icone-hover-nav-principal: rgba(255,255,255,.2) ;
+    --cor-icone-hover-nav-principal-scroll: rgba(0, 0, 0, .3);
+
+    /* Menu Celular */
+    --cor-menu-celular: #1C1B1B;
+    --cor-menu-celular-after: transparent;
+    --cor-bordas-gerais-menu-celular: #555454;
+    --cor-btn-menu-celular: transparent;
+    --cor-btn-rodape-menu-celular: #8E8D8D;
+
+    /* Cabeçalho */
+    --cor-cabecalho-principal: transparent;
+    --cor-imagem-cabecalho-principal: rgba(0,0,0,.5);
+    --cor-btn-cabecalho-principal: rgba(0, 0, 0, .8);
+    --cor-btn-cabecalho-principal-hover: rgba(255,255,255,.3);
+
+    /* Cards */
+    --cor-box-shadow-cards: rgba(0, 0, 0, .3);
+
+}

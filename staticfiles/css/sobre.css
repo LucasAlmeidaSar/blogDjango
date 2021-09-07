@@ -1,0 +1,35 @@
+.container{
+    margin: 100px auto;
+}
+
+.sobre-titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0 20px 0;
+    color: rgb(77, 78, 234);
+}
+
+.sobre-texto{
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #494b4e;
+}
+
+.sobre-link{
+    color: #6C51E9;
+}
+
+.container-imagens{
+    text-align: center;
+}
+
+.imagem-tecnologias{
+    max-width: 100px;
+    max-height: 200px;
+    border-radius: 50px;
+    margin: 10px 15px;
+    object-fit: cover;
+    object-position: center;
+}
+

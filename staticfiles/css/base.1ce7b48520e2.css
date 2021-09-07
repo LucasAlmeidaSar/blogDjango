@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  color: #494b4e;
+  color: var(--cor-texto-padrao);
   position: relative;
   width: 100%;
   background-color: white;
@@ -249,7 +249,7 @@ body {
     margin-left: -1px;
     line-height: 1.25;
     color: rgb(77, 78, 234);
-    background-color: #fff;
+    background-color: var(--cor-clara);
     border: 1px solid #dee2e6;
 }
 

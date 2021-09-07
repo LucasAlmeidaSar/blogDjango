@@ -14,7 +14,7 @@
 
 h1,h2,h3,h4,h5,h6{
   margin: 20px 0 5px 0;  
-  color: #494b4e ;
+  color: var(--cor-texto-padrao) ;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -100,7 +100,7 @@ a{
     cursor: pointer;
 }
 b{
-  color: #494b4e;
+  color: var(--cor-texto-padrao);
 }
 
 .post-link{

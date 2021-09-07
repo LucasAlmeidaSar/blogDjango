@@ -13,7 +13,7 @@
     line-height: 1.5;
     margin-bottom: 15px;
     text-align: justify;
-    color: #494b4e;
+    color: var(--cor-texto-padrao);
 }
 
 .sobre-link{

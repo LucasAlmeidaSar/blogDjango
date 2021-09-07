@@ -216,7 +216,7 @@ body {
     margin-left: -1px;
     line-height: 1.25;
     color: #222;
-    background-color: #fff;
+    background-color: var(--cor-clara);
     border: 1px solid #dee2e6;
 }
 

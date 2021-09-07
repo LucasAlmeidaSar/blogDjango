@@ -14,7 +14,7 @@
 
 h1,h2,h3,h4,h5,h6{
   margin: 20px 0 5px 0;  
-  color: #494b4e ;
+  color: var(--cor-texto-padrao) ;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -96,11 +96,12 @@ img{
 }
 
 a{
-    color: #8E75FF;
+    /* color: #8E75FF; */
+    color: var(--azul-claro);
     cursor: pointer;
 }
 b{
-  color: #494b4e;
+  color: var(--cor-texto-padrao);
 }
 
 .post-link{
@@ -166,11 +167,11 @@ td, th {
     margin: 0 auto 30px auto;
     cursor: pointer;
     max-width: 200px;
-    background: rgb(77, 78, 234);
+    background: var(--azul-padrao);
 }
 
 [id="envia_comentario"]:hover{
-    background: rgb(58, 149, 228);
+    background: var(--azul-claro);
 }
 
 

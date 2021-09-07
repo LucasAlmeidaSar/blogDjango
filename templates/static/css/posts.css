@@ -42,7 +42,7 @@ main{
 
 .post-card{
   max-height: 500px;
-  background-color: white;
+  background-color: var(--cor-clara);
   cursor: pointer;
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -78,18 +78,18 @@ main{
 .post-categoria{
   margin-bottom: 20px;
   font-size: .85rem;
-  color: rgb(77, 78, 234 );
+  color: var(--azul-padrao);
 }
 
 .post-date,
 .post-subtitle{
-  color: #494b4e ;
+  color: var(--cor-texto-padrao) ;
 }
 
 .post-title{
   font-size: 1.35rem;
   margin-bottom: 10px;
-  color: rgb(77, 78, 234 );
+  color: var(--azul-padrao);
 }
 
 .post-subtitle{
@@ -98,7 +98,7 @@ main{
 }
 
 .post-link{
-    background-color: white;
+    background-color: var(--cor-clara);
 }
 
 .page-notfound {
@@ -127,8 +127,8 @@ main{
 }
 
 .active{
-  background: rgb(58, 149, 228 );
-  color: white;
+  background: var(--azul-claro);
+  color: var(--cor-clara);
 }
 
 .count_pages{

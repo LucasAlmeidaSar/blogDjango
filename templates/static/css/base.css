@@ -13,10 +13,10 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  color: #494b4e;
+  color: var(--cor-texto-padrao);
   position: relative;
   width: 100%;
-  background-color: white;
+  background-color: var(--cor-clara);
 }
 
 
@@ -87,11 +87,11 @@ body {
   place-items: center;
   font-size: 1.5rem;
   background-color: var(--cor-clara);
-  color: rgb(77, 78, 234);
+  color: var(--azul-padrao);
 }
 
 .btn-rodape:hover{
-  background-color: #333;
+  background-color: var(--btn-rodape-hover);
 }
 
 
@@ -101,7 +101,7 @@ body {
   width: 100%;
   height: 450px;
   border-radius: 10px;
-  background: white;
+  background: var(--cor-clara);
   box-shadow: 5px 5px 10px var(--cor-box-shadow-cards);
   overflow: hidden;
 }
@@ -189,7 +189,7 @@ body {
   top: 0;
   z-index: 9999;
   width: 100%;
-  background-image: linear-gradient(45deg, #221493, rgb(77, 78, 234), rgb(58, 149, 228 ));
+  background-image: linear-gradient(45deg, var(--azul-escuro), var(--azul-padrao), var(--azul-claro));
   justify-content: space-between;
   padding: 30px 25px;
   height: 40px;
@@ -208,7 +208,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: linear-gradient(45deg, #221493, rgb(77, 78, 234), rgb(58, 149, 228));
+    background-image: linear-gradient(45deg, var(--azul-escuro), var(--azul-padrao), var(--azul-claro));
     place-items: center;
 }
 .links-sm{
@@ -248,8 +248,8 @@ body {
     padding: .5rem .75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: rgb(77, 78, 234);
-    background-color: #fff;
+    color: var(--azul-padrao);
+    background-color: var(--cor-clara);
     border: 1px solid #dee2e6;
 }
 
@@ -267,9 +267,9 @@ body {
 
 .rodape {
   width: 100%;
-  background-image: linear-gradient(45deg, rgb(58, 149, 228 ), rgb(77, 78, 234), #221493);
+  background-image: linear-gradient(45deg, var(--azul-claro), var(--azul-padrao), var(--azul-escuro));
   padding: 48px 32px;
-  color: white;
+  color: var(--cor-clara);
   justify-content: space-around;
 }
 
@@ -280,7 +280,7 @@ body {
 
 .rodape-link:hover{
   text-decoration: none;
-  color: #333 ;
+  color: var(--btn-rodape-hover) ;
 }
 
 /* POST CONTAINER */

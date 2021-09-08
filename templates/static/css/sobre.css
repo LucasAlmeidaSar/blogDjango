@@ -1,35 +1,42 @@
 .container{
-    margin: 100px auto;
+  margin: 100px auto;
 }
 
 .sobre-titulo{
-    text-align: center;
-    font-size: 2rem;
-    margin: 50px 0 20px 0;
-    color: var(--azul-padrao);
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px 0 20px 0;
+  color: var(--azul-padrao);
 }
 
 .sobre-texto{
-    line-height: 1.5;
-    margin-bottom: 15px;
-    text-align: justify;
-    color: var(--cor-texto-padrao);
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: var(--cor-texto-padrao);
 }
 
 .sobre-link{
-    color: #6C51E9;
+  color: #6C51E9;
 }
 
 .container-imagens{
-    text-align: center;
+  text-align: center;
 }
 
 .imagem-tecnologias{
-    max-width: 100px;
-    max-height: 200px;
-    border-radius: 50px;
-    margin: 10px 15px;
-    object-fit: cover;
-    object-position: center;
+  max-width: 100px;
+  max-height: 200px;
+  border-radius: 50px;
+  margin: 10px 15px;
+  object-fit: cover;
+  object-position: center;
 }
 
+
+/* Responsividade */
+@media (max-width:375px){
+  .sobre-texto{
+    padding: 0 5px;
+  }
+}

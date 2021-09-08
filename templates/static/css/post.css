@@ -4,12 +4,12 @@
 }
 
 .post-content{
-    width: 100%;
-    text-align: center;
-    background: #f8f8f8;
-    padding: 10px;
-    margin: 20px 0 10px 0;
-    border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  border-radius: 10px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1,h2,h3,h4,h5,h6,p{
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 h1{
@@ -30,18 +30,18 @@ h2{
   font-size: 2rem;
   letter-spacing: 1.2px;
 }
-h3 {
-    font-size: 1.5rem;
-    letter-spacing: 1.2px;
+h3{
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
 }
 
 ol, ul {
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
 ul{
-   list-style: disc;
-   margin-bottom: 10px;
+  list-style: disc;
+  margin-bottom: 10px;
 }
 
 li{
@@ -50,11 +50,11 @@ li{
 }
 
 ol{
-   list-style: auto;
+  list-style: auto;
 }
 
 tr:first-child{
-    background: #efefef;
+  background: #efefef;
 }
 
 
@@ -77,11 +77,11 @@ pre {
 }
 
 hr {
-    border: 0.5px solid lightgray;
-    margin: 10px 0;
+  border: 0.5px solid lightgray;
+  margin: 10px 0;
 }
 i{
-    font-style: italic;
+  font-style: italic;
 }
 
 img{
@@ -95,16 +95,22 @@ img{
   margin: 10px 0;
 }
 
-a{
-    /* color: #8E75FF; */
-    color: var(--azul-claro);
-    cursor: pointer;
+.conteudo_post a{
+  /* color: #8E75FF; */
+  color: var(--azul-claro);
+  cursor: pointer;
+  font-weight: bold;
 }
+
+.conteudo_post a:hover{
+  text-decoration: underline;
+}
+
 b{
   color: var(--cor-texto-padrao);
 }
 
-.post-link{
+/* .post-link{
   text-align: left;
   font-size: .85rem;
   font-weight: bold;
@@ -118,19 +124,19 @@ b{
 .post-link:hover{
   color: var(--cor-media);
   background: #222;
-}
+} */
 
 .post_info{
-    margin-top: .5rem;
+  margin-top: .5rem;
 }
 
 .post_cabecalho{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .post_titulo{
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .form-wrapper{
@@ -138,45 +144,45 @@ b{
 }
 
 .form_container {
-    margin: 10px auto 50px auto;
+  margin: 10px auto 50px auto;
 }
 
 .form_container input {
-    height: 40px;
+  height: 40px;
 }
 
 .form_container input {
-    width: 100%;
+  width: 100%;
 }
 
 .table{
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 td, th {
-    height: 50px;
-    text-align: left;
-    padding: 1rem;
-    vertical-align: top;
-    border: 1px solid #dee2e6;
+  height: 50px;
+  text-align: left;
+  padding: 1rem;
+  vertical-align: top;
+  border: 1px solid #dee2e6;
 }
 
 [id="envia_comentario"]{
-    margin-bottom: 50px;
-    margin: 0 auto 30px auto;
-    cursor: pointer;
-    max-width: 200px;
-    background: var(--azul-padrao);
+  margin-bottom: 50px;
+  margin: 0 auto 30px auto;
+  cursor: pointer;
+  max-width: 200px;
+  background: var(--azul-padrao);
 }
 
 [id="envia_comentario"]:hover{
-    background: var(--azul-claro);
+  background: var(--azul-claro);
 }
 
 
 .nav ul, footer ul{
-    list-style: none;
+  list-style: none;
 }
 
 .nav ul{
@@ -184,31 +190,31 @@ td, th {
 }
 
 .form-comentario_titulo{
-  color: #3f3fc4;
+  color: var(--cor-titulo-comentario);
   margin-bottom: 1rem;
   font-size: 1.75rem;
   text-align: center;
 }
 
 .comentario {
-  background: #E9F2FC;
+  background: var(--cor-fundo-comentario);
   border-radius: 10px;
   padding: 10px 15px;
-  border: 1px solid #BED9F6;
+  border: 1px solid var(--cor-borda-comentario);
   margin: 10px 0;
 }
 
 .comentarios_titulo{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #3f3fc4;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--cor-titulo-comentario);
 }
 
 .comentario_autor{
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: .5rem;
-    color: #3f3fc4;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+  color: var(--cor-autor-comentario);
 }
 
 .comentario_conteudo{
@@ -218,24 +224,24 @@ td, th {
 
 input[name="nome_comentario"],
 input[name="email_comentario"]{
-    padding: 5px 10px;
-    border: 1px solid lightgray;
-    height: 30px;
-    width: 100%;
+  padding: 5px 10px;
+  border: 1px solid var(--borda-input-padrao);
+  height: 30px;
+  width: 100%;
 }
 
 textarea[name="conteudo_comentario"]{
-    padding: 5px 10px;
-    border: 1px solid lightgray;
-    width: 100%;
+  padding: 5px 10px;
+  border: 1px solid var(--borda-input-padrao);
+  width: 100%;
 }
 
 form{
-    display: grid;
+  display: grid;
 }
 
 iframe{
-    width: 100%;
+  width: 100%;
 }
 
 
@@ -245,8 +251,8 @@ iframe{
 
 
 
-/* Responsividade do Form */
 
+/* Responsividade do Form */
 @media (min-width:1040px){
   .form-wrapper{
     width: 100%;
@@ -261,48 +267,48 @@ iframe{
 
 /* Responsividade do post */
 @media (max-width:426px){  
-    .comentarios_titulo{
-      font-size: 1.2rem;
-    }
-    .comentario_autor{
-      font-size: 1rem;
-    }
-  
-    .form_container{      
-      width: 100%;
-    }
-    .post_titulo {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      line-height: 1.1;
-      margin-bottom: 1.2rem;
-    }
-    .form-comentario_titulo {
-      font-size: 1.5rem;
-    }
+  .comentarios_titulo{
+    font-size: 1.2rem;
+  }
+  .comentario_autor{
+    font-size: 1rem;
+  }
 
-    h1, h2, h3, h4, h5, h6, p {
-      line-height: 1.2;
-    }
-    h1 {
-      font-size: 1.5rem;
+  .form_container{      
+    width: 100%;
+  }
+  .post_titulo {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+  }
+  .form-comentario_titulo {
+    font-size: 1.5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  h2 {
+      font-size: 1.3rem;
       letter-spacing: 1px;
       margin-bottom: 15px;
-    }
-    h2 {
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-        margin-bottom: 15px;
-    }
-    p {
-        margin-bottom: 10px;
-    }
-    img{
-      min-width: 100%;
-      max-width: 100%;
-    }
-    .imagem {
-      width: 100%;
-      min-width: 100%;
-    }
+  }
+  p {
+      margin-bottom: 10px;
+  }
+  img{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .imagem {
+    width: 100%;
+    min-width: 100%;
+  }
 }

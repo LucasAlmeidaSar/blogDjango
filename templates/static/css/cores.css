@@ -7,32 +7,40 @@
     --azul-padrao: rgb(77, 78, 234);
     --azul-escuro: #221493;
     --azul-claro: rgb(58, 149, 228 );
-    --cor-texto-padrao: #494b4e ;
-
+    
+    
     /* Elementos gerais */
-    /* --cor-fundo-principal : #f3f3f3;  */
     --cor-btn: rgb(77, 78, 234);
     --cor-btn-hover: rgb(58, 149, 228);    
+    --cor-text-info: #6c757d;
+    --borda-input-padrao: lightgray;
+    --cor-texto-padrao: #494b4e;
+
+
+    /* Cores dos comentários do post */
+    --cor-fundo-comentario: #E9F2FC;
+    --cor-titulo-comentario: #3f3fc4;
+    --cor-borda-comentario: #BED9F6;
+    --cor-autor-comentario: #3f3fc4;
+
 
     /* Rodapé */
     --cor-fundo-rodape : rgb(24, 24, 24);
     --btn-rodape-hover: #333;
 
+
     /* Navegação Principal */
     --cor-btn-nav: transparent;
     --btn-nav-hover: rgba(255, 255, 255, 0.192);
-    /* --cor-btn-nav-principal-hover: rgba(255, 255, 255, .15); */
-    /* --cor-btn-nav-principal-hover-scroll: rgba(0, 0, 0, .3); */
     --cor-icone-hover-nav-principal: rgba(255,255,255,.2) ;
     --cor-icone-hover-nav-principal-scroll: rgba(0, 0, 0, .3);
 
+
     /* Menu Celular */
-    /* --cor-menu-celular: #1C1B1B; */
-    /* --cor-menu-celular-after: transparent; */
-    /* --cor-bordas-gerais-menu-celular: #555454; */
-    /* --cor-btn-menu-celular: transparent; */
+    
 
     /* Cards */
-    /* --cor-box-shadow-cards: rgba(0, 0, 0, .3); */
+    --card-borda: lightgray;
+    --cor-box-shadow-cards: lightgray;
 
 }

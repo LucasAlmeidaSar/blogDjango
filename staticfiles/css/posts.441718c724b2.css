@@ -35,24 +35,11 @@ main{
 }
 
 .post-list{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 .post-card{
   max-height: 500px;
-  background-color: white;
-  cursor: pointer;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px lightgray;
-  transition: all .3s ease;
-  overflow: hidden;
-}
-
-.post-card:hover{
-  transform: translateY(-10px);
 }
 
 .post-imagem{
@@ -144,7 +131,6 @@ main{
 @media (max-width: 1260px){
     .post-list {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
     }
 
 }
@@ -152,7 +138,6 @@ main{
 @media (max-width: 830px){
     .post-list {
         grid-template-columns: 1fr;
-        gap: 30px;
     }
     .post-subtitle {
         letter-spacing: 1px;

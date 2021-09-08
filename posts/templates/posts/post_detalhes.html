@@ -2,14 +2,18 @@
 {% load static %}
 {% load humanize %}
 
-{% block style %} <link rel="stylesheet" href="{% static 'css/post.css' %}"> {% endblock %}
-{% block title %} <title>{{post.titulo_post}} | Lucas de Almeida</title> {% endblock %}
+{% block style %} 
+  <link rel="stylesheet" href="{% static 'css/post.css' %}"> 
+{% endblock %}
+
+{% block title %} 
+  <title>{{post.titulo_post}} | Lucas de Almeida</title> 
+{% endblock %}
 
 
 {% block content %}
- <!-- Page Content -->
 
-<div class="container">
+  <div class="container">
 
     <!-- POST --> 
 
@@ -18,10 +22,10 @@
 
       <div class="centralizado">
         <h2 class="post_titulo">{{ post.titulo_post }}</h2>
-        <h5 class="post_excerto">{{ post.excerto_post }} ...</h5>
+        <h5 class="post_excerto">{{ post.excerto_post }}</h5>
         <p class="post_info text-info centralizado">
           <small>
-              {{ post.autor_post }} | {{ post.data_post }} | {{ post.categoria_post }}
+            {{ post.autor_post }} | {{ post.data_post }} | {{ post.categoria_post }}
           </small>
         </p>
       </div>
@@ -30,18 +34,18 @@
 
     <!-- Container do conteúdo do Post -->
     <div class="conteudo_post-container">
+      <div class="conteudo_post">
 
-        <div class="conteudo_post">
+        <!-- Imagem do post -->
+        {% if post.imagem_post %}
+          <img class="imagem" 
+               src="{{ post.imagem_post }}" 
+               alt="{{ post.imagem_post.name }}">
+        {% endif %}
 
-            <!-- Imagem do post -->
-            {% if post.imagem_post %}
-              <img class="imagem" src="{{ post.imagem_post }}" alt="{{ post.imagem_post.name }}">
-            {% endif %}
-
-            <!-- Conteúdo do post -->
-            {{ post.conteudo_post|safe }}
-
-        </div>
+        <!-- Conteúdo do post -->
+        {{ post.conteudo_post|safe }}
+      </div>
 
     </div>
 
@@ -73,13 +77,15 @@
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <div class="g-recaptcha" data-sitekey="6LdWwh0cAAAAAI0x9k7oTOoXuA7tHXTgna5ijEVA"></div>
         <br/>
-        <input id="envia_comentario" type="submit" class="btn"
-            value="Enviar">
+        <input id="envia_comentario" 
+               type="submit" 
+               class="btn"
+               value="Enviar">
         {% include 'static/parciais/_messages.html' %}
       </form>
     </div>        
     
     <!-- Fim do POST -->
-   
-</div>
+    
+  </div>
 {% endblock %}

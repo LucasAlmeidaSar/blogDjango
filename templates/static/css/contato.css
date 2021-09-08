@@ -1,27 +1,27 @@
 .contato-titulo{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0px;
-    color: var(--azul-padrao);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0px;
+  color: var(--azul-padrao);
 }
 
 .container{
-    margin: 100px auto;
+  margin: 100px auto;
 }
 
 
 input.btn{
-    height: 50px;
-    cursor: pointer;
+  height: 50px;
+  cursor: pointer;
 }
 
 input.btn:hover{
-   background: var(--cor-btn-hover);
+  background: var(--cor-btn-hover);
 }
 
 .errorlist {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 
@@ -29,15 +29,15 @@ input.btn:hover{
 /* Responsividade */
 
 @media (max-width: 769px){
-    .form_container{
-        width: 100%;
-    }
+  .form_container{
+      width: 100%;
+  }
 }
 
 @media (max-width: 450px){
-    .form_container input, .form_container textarea {
-        width: 100%;
-    }
+  .form_container input, .form_container textarea {
+      width: 100%;
+  }
 }
 
 @media (max-width: 321px) {  

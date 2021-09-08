@@ -7,43 +7,30 @@
 
 {% block title %} <title>Home | Lucas de Almeida</title> {% endblock %}
 
-{% block navbar %}
-
-
-    <!--
-    <ul class="flex">
-    <li> <a class="btn btn-nav btn-logar" href="">Login | Registre-se</a> </li>
-    </ul>
-    -->
-{% endblock %}
-
-
 
 {% block content %}
-     <div class="wrapper flex">
+  <div class="wrapper flex center">
 
-        <div class="image-wrapper">
-          <img class="imagem" src="{% static 'image/eu.png' %}" alt="Minha foto">
-        </div>
+    <div class="image-wrapper">
+      <img class="imagem" src="{% static 'image/eu.png' %}" alt="Minha foto">
+    </div>
 
-        <div>
-          <h1 class="main-title">Bem-vindo!</h1>
-          <h2 class="main-subtitle">Um pouco sobre mim</h2>
-          <p class="main-text">
-            Meu nome é Lucas, sou um desenvolvedor e amante da tecnologia como um todo.
-            Em meu site você conhecerá um pouco sobre mim, meu trabalho e algumas
-            dicas legais. Divirta-se!
-          </p>
+    <div>
+      <h1 class="main-title">Bem-vindo!</h1>
+      <h2 class="main-subtitle">Um pouco sobre mim</h2>
+      <p class="main-text">
+        Meu nome é Lucas, sou um desenvolvedor e amante da tecnologia como um todo.
+        Em meu site você conhecerá um pouco sobre mim, meu trabalho e algumas
+        dicas legais. Divirta-se!
+      </p>
 
+      <ul class="menu flex">
+        <li><a class="btn btn-main btn-blog" href="posts/">Blog</a></li>
+        <li><a class="btn btn-main btn-sobre" href="sobre/">Sobre</a></li>
+        <li><a class="btn btn-main btn-contato" href="contato/">Contato</a></li>
+      </ul>
 
-          <ul class="menu flex">
-            <li><a class="btn btn-main btn-blog" href="posts/">Blog</a></li>
-              <!-- <li><a class="btn btn-main btn-portifolio" href="portifolio/">Portifolio</a></li> -->
-            <li><a class="btn btn-main btn-sobre" href="sobre/">Sobre</a></li>
-            <li><a class="btn btn-main btn-contato" href="contato/">Contato</a></li>
-          </ul>
+    </div>
 
-        </div>
-
-      </div>
+  </div>
 {% endblock %}

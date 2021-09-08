@@ -2,113 +2,146 @@
 {% load static %}
 {% load humanize %}
 
-{% block style %} <link rel="stylesheet" href="{% static 'css/posts.css' %}"> {% endblock %}
-{% block title %} <title>Busca | Lucas de Almeida</title> {% endblock %}
+{% block style %} 
+  <link rel="stylesheet" href="{% static 'css/posts.css' %}"> 
+{% endblock %}
+
+{% block title %} 
+  <title>Busca | Lucas de Almeida</title> 
+{% endblock %}
 
 {% block navbar %}
-    <form class="busca flex" action="{% url 'post_busca' %}">
-      <div class="busca-input">
-        <input type="search" id="form-busca" name="termo" value="{{ request.GET.termo }}"/>
-      </div>
-    </form>
+  <form class="busca flex" action="{% url 'post_busca' %}">
+    <div class="busca-input">
+      <input type="search" id="form-busca" name="termo" value="{{ request.GET.termo }}"/>
+    </div>
+  </form>
 {% endblock %}
+
 
 {% block content %}
 
-        <!-- Input de busca -->
-       <form class="busca-sm flex" action="{% url 'post_busca' %}">
-          <div class="busca-sm-input">
-            <input type="search" id="form-busca-sm" name="termo" value="{{ request.GET.termo }}" placeholder="Pesquise.."/>
-          </div>
-        </form>
-      <div class="posts-wrapper">
+  <!-- Input de busca Tela mobile -->
+  <form class="busca-sm flex" action="{% url 'post_busca' %}">
+    <div class="busca-sm-input">
+      <input type="search" 
+             id="form-busca-sm" 
+             name="termo" 
+             value="{{ request.GET.termo }}" 
+             placeholder="Pesquise.."/>
+    </div>
+  </form>
 
-      <!-- Container de posts -->
-      <div class="posts-wrapper">
+  <!-- Container de posts -->
+  <div class="posts-wrapper">
 
-        {% if not posts %}
-          <h1 class="titulo-notfound alert alert-danger">Nenhum resultado encontrado!</h1>
-            <div class="page-notfound" style="background-image: url({% static 'image/not_found.jpg' %})"></div>
+    {% if not posts %}
+      <h1 class="titulo-notfound alert alert-danger">
+        Nenhum resultado encontrado!
+      </h1>
+      <div class="page-notfound" 
+           style="background-image: url({% static 'image/not_found.jpg' %})">
+      </div>
+    {% endif %}
+
+
+    <!-- Grid de posts -->
+    <ul class="post-list grid">
+
+    {% for post in posts %}
+      <!-- Post -->
+      <li class="post-card card">
+      <a class="post-link" href="{% url 'post_detalhes' post.id %}">
+      <div class="post-imagem">
+        {% if post.imagem_post %}
+          <img class="imagem" src="{{post.imagem_post}}" alt="{{post.imagem_post.name}}">
+        {% endif %}
+        {% if not post.imagem_post %}
+          <img class="imagem" src="{% static 'image/no-picture.png' %}" alt="none">
+        {% endif %}
+      </div>
+
+      <div class="post-content">
+        <p class="post-categoria"> <b>{{post.categoria_post}}</b> </p>
+        <p class="post-date">
+          {{ post.data_post|naturalday|title }} |
+          {% if post.numero_comentarios < 2 %}
+            {{ post.numero_comentarios }} comentário
+          {% endif %}
+          {% if post.numero_comentarios > 1 %}
+            {{ post.numero_comentarios }} comentários
+          {% endif %}
+        </p>
+        <h2 class="post-title">{{post.titulo_post}}</h2>
+        <p class="post-subtitle">
+          {{post.excerto_post}}
+        </p>
+      </div>
+      </a>
+      </li>
+
+    {% endfor %}
+
+    </ul>
+
+
+    <!-- Paginação -->
+    {% if is_paginated %}
+    <div class="pagination">
+      <ul class="pagination">
+
+        {% if page_obj.has_previous %}
+          <li class="page-item">
+              <a class="page-link" href="?termo={{request.GET.termo}}&page=1">
+                &laquo;
+              </a>
+          </li>
+          <li class="page-item">
+              <a class="page-link" 
+                 href="?termo={{request.GET.termo}}&page={{ page_obj.previous_page_number }}">
+                 &lsaquo;
+              </a>
+          </li>
         {% endif %}
 
-        <!-- Grid de posts -->
-        <ul class="post-list">
+        {% for num in page_obj.paginator.page_range %}
 
-        {% for post in posts %}
-
-                <!-- Post -->
-                <li class="post-card">
-                <a class="post-link" href="{% url 'post_detalhes' post.id %}">
-                <div class="post-imagem">
-                  {% if post.imagem_post %}
-                    <img class="imagem" src="{{post.imagem_post}}" alt="{{post.imagem_post.name}}">
-                    {% endif %}
-                    {% if not post.imagem_post %}
-                    <img class="imagem" src="{% static 'image/no-picture.png' %}" alt="none">
-                    {% endif %}
-                </div>
-
-                <div class="post-content">
-                  <p class="post-categoria"> <b>{{post.categoria_post}}</b> </p>
-                  <p class="post-date">
-                      {{ post.data_post|naturalday|title }} |
-                      {% if post.numero_comentarios < 2 %}
-                      {{ post.numero_comentarios }} comentário
-                      {% endif %}
-                      {% if post.numero_comentarios > 1 %}
-                      {{ post.numero_comentarios }} comentários
-                      {% endif %}
-                  </p>
-                  <h2 class="post-title">{{post.titulo_post}}</h2>
-                  <p class="post-subtitle">
-                    {{post.excerto_post}}
-                  </p>
-                </div>
-                </a>
-                </li>
+          {% if page_obj.number == num %}
+          <li class="page-item active">
+              <a class="page-link active" 
+                 href="?termo={{request.GET.termo}}&page={{ num }}">
+                 {{ num }}
+              </a>
+          </li>
+          {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <li class="page-item ">
+              <a class="page-link" 
+                 href="?termo={{request.GET.termo}}&page={{ num }}">{{ num }}</a>
+          </li>
+          {% endif %}
 
         {% endfor %}
 
-        </ul>
 
-        <!-- _pagination.html -->
-       {% if is_paginated %}
-        <div class="pagination">
-            <ul class="pagination">
-                {% if page_obj.has_previous %}
-                <li class="page-item">
-                    <a class="page-link" href="?termo={{request.GET.termo}}&page=1">&laquo;</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="?termo={{request.GET.termo}}&page={{ page_obj.previous_page_number }}">&lsaquo;</a>
-                </li>
-                {% endif %}
 
-                {% for num in page_obj.paginator.page_range %}
-
-                {% if page_obj.number == num %}
-                <li class="page-item active">
-                    <a class="page-link active" href="?termo={{request.GET.termo}}&page={{ num }}">{{ num }}</a>
-                </li>
-                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-                <li class="page-item ">
-                    <a class="page-link" href="?termo={{request.GET.termo}}&page={{ num }}">{{ num }}</a>
-                </li>
-                {% endif %}
-
-                {% endfor %}
-
-                {% if page_obj.has_next %}
-                <li class="page-item">
-                    <a class="page-link" href="?termo={{request.GET.termo}}&page={{ page_obj.next_page_number }}">&rsaquo;</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="?termo={{request.GET.termo}}&page={{ page_obj.paginator.num_pages }}">&raquo;</a>
-                </li>
-                {% endif %}
-            </ul>
-        </div>
+        {% if page_obj.has_next %}
+          <li class="page-item">
+              <a class="page-link" 
+                 href="?termo={{request.GET.termo}}&page={{ page_obj.next_page_number }}">
+                 &rsaquo;
+              </a>
+          </li>
+          <li class="page-item">
+              <a class="page-link" 
+                 href="?termo={{request.GET.termo}}&page={{ page_obj.paginator.num_pages }}">
+                &raquo;
+              </a>
+          </li>
         {% endif %}
+        
+      </ul>
+    </div>
+    {% endif %}
 
-      </div>
+  </div>
 {% endblock %}

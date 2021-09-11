@@ -24,8 +24,7 @@ body{
 
 .main-title{
   padding: 0 15px;
-  font-size: 3rem;
-  letter-spacing: 4px;
+  font-size: 2.5rem;
   color: var(--azul-padrao);
 }
 
@@ -93,7 +92,7 @@ body{
 
 @media (max-width:1024px){
     .main-title {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     .main-subtitle{
       font-size: 1.1rem;
@@ -145,7 +144,7 @@ body{
         margin-right: 0px;
     }
     .main-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     .main-subtitle {

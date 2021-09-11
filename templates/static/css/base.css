@@ -53,6 +53,10 @@ body {
   user-select: none;
 }
 
+.logo {
+  height: 40px;
+  width: 40px;
+}
 
 /* Botões */
 .btn {
@@ -80,7 +84,8 @@ body {
 .btn-nav:hover{  background-color: var(--btn-nav-hover);  }
 
 .btn-logo{
-    width: 150px;
+    width: 100px;
+    padding: 0;
 }
 
 .btn-rodape{
@@ -325,7 +330,7 @@ body {
     display: flex;
   }
   .btn-logo{
-    width: 120px;
+    width: 80px;
   }
 }
 
@@ -334,7 +339,11 @@ body {
     width: 60px;
   }
   .btn-logo {
-    width: 120px;
+    width: 50px;
+  }
+  .logo{
+    height: 30px;
+    width: 30px;
   }
   .btn-sm {
     width: 150px;

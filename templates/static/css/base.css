@@ -341,9 +341,10 @@ body {
   .btn-logo {
     width: 50px;
   }
-  .logo{
-    height: 30px;
-    width: 30px;
+  .logo {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: contain;
   }
   .btn-sm {
     width: 150px;

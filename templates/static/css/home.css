@@ -125,7 +125,7 @@ body{
 
 @media (max-width:768px){
     .wrapper {
-        margin-top: 20px;
+        margin-top: 50px;
         width: 100%;
         position: static;
         transform: translate(0%, 0%);
@@ -152,7 +152,7 @@ body{
     }
     .main-text {
         line-height: 1.1;              
-        width: 90%;
+        width: 100%;
         margin: 0 auto 20px auto;
     }
     .menu {

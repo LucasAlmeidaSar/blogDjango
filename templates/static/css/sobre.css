@@ -12,7 +12,6 @@
 .sobre-texto{
   line-height: 1.5;
   margin-bottom: 15px;
-  text-align: justify;
   color: var(--cor-texto-padrao);
 }
 

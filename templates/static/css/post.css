@@ -45,7 +45,7 @@ ul{
 }
 
 li{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   line-height: 1.2;
 }
 
@@ -60,7 +60,6 @@ tr:first-child{
 
 p{
   line-height: 1.5;
-  text-align: justify;
   margin-bottom: 20px;
 }
 

@@ -3,10 +3,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site pessoal do Lucas de Almeida Sarmento, dando dicas de tecnologias,
-    falando um pouco sobre si e etc.">
+    
+    {% block title %}{% endblock %}
+    <meta name="description" content="Site pessoal do Lucas de Almeida Sarmento, dando dicas de programação,
+    desenvolvimento WEB e ciência de dados.">
     <meta name="author" content="Lucas de Almeida Sarmento">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,7 +20,6 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="shortcut icon" href="{% static 'image/logo.ico' %}">
     {% block style %}{% endblock %}
-    {% block title %}{% endblock %}
 </head>
 <body>
   <nav class="nav flex">

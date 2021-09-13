@@ -1,5 +1,5 @@
 main{
-  margin: 100px auto 50px auto;
+  margin: 100px auto 80px auto;
   width: 80%;
 }
 
@@ -93,6 +93,7 @@ main{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .titulo-notfound{
@@ -192,6 +193,9 @@ main{
     .post-card{
       width: 90%;
       margin: 0 auto;
+    }
+    .titulo-notfound {
+      font-size: 1.2rem;
     }
 
 }

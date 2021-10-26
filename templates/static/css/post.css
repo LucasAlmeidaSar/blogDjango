@@ -288,7 +288,7 @@ iframe{
   }
 
   h1, h2, h3, h4, h5, h6, p {
-    line-height: 20px;
+    line-height: 30px;
   }
   h1 {
     font-size: 1.5rem;
@@ -299,6 +299,11 @@ iframe{
       font-size: 1.3rem;
       letter-spacing: 1px;
       margin-bottom: 15px;
+  }
+  h3{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
   }
   p {
       margin-bottom: 10px;

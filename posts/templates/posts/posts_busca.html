@@ -51,7 +51,7 @@
     {% for post in posts %}
       <!-- Post -->
       <li class="post-card card">
-      <a class="post-link" href="{% url 'post_detalhes' post.id %}">
+      <a class="post-link" href="{% url 'post_detalhes' post.slug %}">
       <div class="post-imagem">
         {% if post.imagem_post %}
           <img class="imagem" src="{{post.imagem_post}}" alt="{{post.imagem_post.name}}">
